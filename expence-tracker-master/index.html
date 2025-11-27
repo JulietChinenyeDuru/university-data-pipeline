@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+  </header><hr>
+  <div>
+    <h5>Total Budget:<span id="total">0</span></h5>
+    <h5>Current balance:<span id="balance">0</span></h5><hr>
+  </div>
+  <div>
+    <h5>add money to budget</h5>
+    <input type="number" id="money">
+    <button onclick="addMoney()">Add Money</button><hr>
+  </div>
+
+  <div>
+    <h5>Add Expenses</h5>
+    <input type="text" placeholder="enter your expen">
+    <input type="number">
+  </div>
+
+  <div id="add">
+    <h5>Added Expenses</h5>
+  </div>
+
+  <script src="js/expence.js"></script>
+</body>
+</html>
