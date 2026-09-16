@@ -5,15 +5,6 @@ I designed and generated the entire dataset myself, rather than using a pre-exis
 
 What I built
 2.1 Synthetic university dataset (generate_data.py)
-Using the Faker Python library, I designed and generated ten related tables covering the operational scope of a university:
-Table	Records	Description
-Faculties	10	Top-level academic divisions
-Departments	51	Departments nested under each faculty, including Information and Communication Technology under Engineering
-Students	2,000	Undergraduate, Masters, and PhD students with GPA, attendance, tuition and scholarship data
-Staff	300	Academic staff across ranks, from Teaching Assistant to Professor
-Courses	255	Courses assigned to departments
-Enrollments	11,043	Individual student-course enrollments with per-course grades
-Buildings	51	Departmental buildings and capacity
-Library usage	3,000	Student library visit records
-Extracurricular activities	1,500	Student participation in clubs and societies
-Seminar attendance	1,200	Student and staff attendance at university events
+Using the Faker Python library, I designed and generated ten related tables covering the operational scope of a university
+<img width="777" height="516" alt="image" src="https://github.com/user-attachments/assets/500b23a6-eeeb-4a22-99dd-1459cc030f90" />
+
