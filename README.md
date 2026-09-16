@@ -2,6 +2,14 @@
 
 This document describes an independently designed and built data engineering project: a synthetic, university-wide dataset and an accompanying PySpark data processing pipeline, deployed with a public interactive dashboard. I undertook this project to demonstrate end-to-end data engineering capability across a realistic, multi-entity institutional dataset, going beyond processing a single flat file to model how data genuinely lives inside an organisation: spread across related tables that only produce meaningful insight once properly joined and aggregated.
 
+Designing a system architecture diagram for a data pipeline
+
+<img width="1276" height="806" alt="image" src="https://github.com/user-attachments/assets/1c5bf220-ff7f-4b29-a3ca-76b0cf5e58f7" />
+
+
+This is  the system architecture for the project: data generation feeding ten related CSV tables, through the PySpark ETL layer for joins and aggregations, into the deployed Streamlit dashboard
+
+
 I designed and generated the entire dataset myself, rather than using a pre-existing public dataset, so that I could model a realistic relational structure and practice the kind of multi-table join and aggregation logic used in professional data engineering work
 
 What I built
@@ -11,7 +19,11 @@ What I built
 Using the Faker Python library, I designed and generated ten related tables covering the operational scope of a university
 <img width="777" height="516" alt="image" src="https://github.com/user-attachments/assets/500b23a6-eeeb-4a22-99dd-1459cc030f90" />
 
-I modelled realistic population proportions rather than applying uniform randomness throughout. For example, and weighted student degree level so that 80% of students are Undergraduate, 15% Masters, and 5% PhD, reflecting typical university enrolment patterns. Ages, dropout probability, tuition status, and scholarship status were similarly weighted to reflect plausible real-world distributions rather than being evenly random.
+I modelled realistic population proportions rather than applying uniform randomness throughout. For example, and weighted student degree level so that 80% of 
+
+students are Undergraduate, 15% Masters, and 5% PhD, reflecting typical university enrolment patterns. Ages, dropout probability, tuition status, and scholarship 
+
+status were similarly weighted to reflect plausible real-world distributions rather than being evenly random.
 
 2.2 PySpark ETL pipeline (etl.py)
 
@@ -47,8 +59,8 @@ Running the pipeline against the generated dataset produced the following findin
 
 
 •	End-to-end pipeline construction: extract, transform/join, aggregate, and load stages
-•	Building and deploying a public, interactive data dashboard using Streamlit
 
+•	Building and deploying a public, interactive data dashboard using Streamlit
 
 •	Version control and public code hosting via Git and GitHub, including resolving merge conflicts and managing repository history
 
