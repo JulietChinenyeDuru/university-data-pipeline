@@ -49,9 +49,11 @@ Running the pipeline against the generated dataset produced the following findin
 •	End-to-end pipeline construction: extract, transform/join, aggregate, and load stages
 •	Building and deploying a public, interactive data dashboard using Streamlit
 
+
 •	Version control and public code hosting via Git and GitHub, including resolving merge conflicts and managing repository history
 
 5. Relevance to this application
+
 This project was undertaken independently, outside of any employment context, to demonstrate current, hands-on data engineering capability using industry-standard tools (PySpark, Python, Git, cloud-hosted deployment).
 
 
